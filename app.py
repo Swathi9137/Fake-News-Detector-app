@@ -2,8 +2,9 @@ import streamlit as st
 import joblib
 
 
-model = joblib.load(r"C:\Users\swath\Downloads\model.pkl")
-vectorizer = joblib.load(r"C:\Users\swath\Downloads\vectorizer.pkl")
+model = joblib.load("model.pkl")
+vectorizer = joblib.load("vectorizer.pkl")
+
 
 st.title("📰 Fake News Detector")
 st.write("Enter a news headline to check if it's REAL or FAKE.")
